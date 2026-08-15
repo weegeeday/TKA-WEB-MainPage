@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
+    "deploy": "npm run build && wrangler pages deploy dist",
+    "preview:cf": "npm run build && wrangler pages dev dist",
     "build-only": "vite build",
     "type-check": "vue-tsc --build"
   },
@@ -22,7 +24,8 @@
     "typescript": "~6.0.0",
     "vite": "^8.1.5",
     "vite-plugin-vue-devtools": "^8.1.5",
-    "vue-tsc": "^3.3.7"
+    "vue-tsc": "^3.3.7",
+    "wrangler": "^4.123.0"
   },
   "engines": {
     "node": "^22.18.0 || >=24.12.0"
