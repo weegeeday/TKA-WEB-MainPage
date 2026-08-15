@@ -5,6 +5,7 @@ const gameUrl = 'https://game.technokittenadventure.ca'
 const repo1Url = 'https://github.com/shadowartist201/TKA-PC-Port'
 const repo2Url = 'https://github.com/weegeeday/TKA-PC-Port-Web'
 const donateUrl = 'https://buymeacoffee.com/shadowartist201'
+const bugReportUrl = 'https://github.com/weegeeday/TKA-PC-Port-Web/issues/new'
 const topImage = '/top-image.png'
 
 const showControlsModal = ref(false)
@@ -107,6 +108,18 @@ function closeModal() {
           </div>
         </div>
       </section>
+
+      <!-- Footer Section: Submit Bug Report -->
+      <footer class="footer">
+        <a 
+          :href="bugReportUrl" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-bug-report"
+        >
+          Submit a Bug Report &rarr;
+        </a>
+      </footer>
     </main>
 
     <!-- Controls Popup Modal (PC only) -->
@@ -438,5 +451,28 @@ kbd {
   .repo-actions {
     margin-top: 0.25rem;
   }
+}
+
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+}
+
+.btn-bug-report {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.btn-bug-report:hover {
+  color: var(--text-main);
+  border-color: var(--text-main);
+  background-color: var(--bg-secondary);
 }
 </style>
