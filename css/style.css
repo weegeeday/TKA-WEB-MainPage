@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* Techno Kitten Adventure - Official Website Stylesheet */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('../images/bg_mainbody.jpg');
+}
+
+img {
+  border: 0;
+}
+
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  width: 100%;
+  height: 38px;
+  background: #000 url('../images/img_border.html') no-repeat center 32px;
+}
+
+.topBarCenter {
+  width: 1001px;
+  height: 32px;
+  margin: 0 auto;
+}
+
+.topBarLeft {
+  width: auto;
+  float: left;
+  font: 12px normal Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.firstHalf {
+  width: 100%;
+  min-height: 628px;
+  background: url('../images/bg_top.jpg') top center no-repeat;
+}
+
+.main1007 {
+  width: 1007px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.logoRow {
+  width: 1007px;
+  height: 177px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 380px;
+  height: 162px;
+  float: left;
+  margin: 13px 167px 0 0;
+}
+
+.shopButton {
+  float: right;
+  padding-top: 25px;
+}
+
+.mainLeft {
+  width: 564px;
+  height: 342px;
+  float: left;
+  padding-left: 60px;
+}
+
+.mainRight {
+  width: 254px;
+  height: auto;
+  float: left;
+  padding-top: 18px;
+}
+
+.video {
+  width: 560px;
+  height: 315px;
+  margin-bottom: 5px;
+}
+
+.clickHere {
+  width: auto;
+  height: auto;
+  float: left;
+  margin: 39px 0 10px 120px;
+  display: inline;
+}
+
+.windows {
+  width: 256px;
+  height: 56px;
+  float: left;
+  margin: 0 0 7px 0;
+}
+
+.windows img {
+  display: block;
+  width: 256px;
+  height: 56px;
+}
+
+.footerHolder {
+  width: 100%;
+  height: 71px;
+  background: url('../images/bg_footer.png') repeat-x;
+  margin-top: auto;
+}
+
+.footer {
+  width: 927px;
+  height: 71px;
+  padding-left: 80px;
+  margin: 0 auto;
+}
+
+.botlogo {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+  float: left;
+  margin-top: 13px;
+}
+
+.footerText {
+  width: auto;
+  float: right;
+  margin-top: 25px;
+  font: normal 14px Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.footerText a {
+  text-decoration: underline;
+  padding: 0 5px;
+  color: #fff;
+}
+
+.footerText a:hover {
+  text-decoration: none;
+  padding: 0 5px;
+  color: #fff;
+}

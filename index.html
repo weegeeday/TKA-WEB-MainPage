@@ -1,14 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TKA Web Main Page">
-    <title>TKA Web</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="techno kitten adventure, indie games, techno game, best indie games, android games" />
+  <meta name="title" content="TECHNO KITTEN ADVENTURE" />
+  <meta name="description" content="Navigate a kitten by jetpack through a fantastic world of techno music in Techno Kitten Adventure." />
+
+  <title>Techno Kitten Adventure</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    (function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('desktop') === '1') return;
+      var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      var isMobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobileUA || (isTouch && window.innerWidth <= 768)) {
+        window.location.replace("mobile.html");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="mainContainer">
+    <!-- Top Bar -->
+    <div class="topBar">
+      <div class="topBarCenter">
+        <div class="topBarLeft">Techno Kitten Adventure. Yes, you can has it.</div>
+      </div>
+    </div>
+
+    <!-- First Half Section -->
+    <div class="firstHalf">
+      <div class="logoRow">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/img_logo.png" alt="Techno Kitten Adventure Logo" title="Techno Kitten Adventure Logo" border="0" />
+          </a>
+        </div>
+        <div class="shopButton">
+          <a href="https://shadows-stuff-shop.fourthwall.com/" target="_blank">
+            <img src="images/img_shop.png" alt="Shop" />
+          </a>
+        </div>
+      </div>
+
+      <div class="main1007">
+        <!-- Main Left Column (Video & Transparent Shop Link Overlay) -->
+        <div class="mainLeft">
+          <div class="video" style="z-index:0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5uySc6esCB4" title="TECHNO KITTEN ADVENTURE (APP STORE &amp; XBOX DEBUT TRAILER)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="clickHere">
+            <a href="https://shadows-stuff-shop.fourthwall.com/" target="_blank">
+              <img src="images/spacer.gif" alt="Toys, Shirts, Stickers and more" title="Toys, Shirts, Stickers and more" width="375" height="107" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Main Right Column (Platform & Game Action Image Buttons) -->
+        <div class="mainRight">
+          <!-- Android Store Button -->
+          <div class="windows">
+            <a href="https://play.google.com/store/apps/details?id=com.shadow.TKA_Android" target="_blank">
+              <img src="images/android.png" alt="Android" />
+            </a>
+          </div>
+
+          <!-- GitHub PC Port Button -->
+          <div class="windows">
+            <a href="https://github.com/shadowartist201/TKA-PC-Port" target="_blank" title="GitHub (TKA-PC-Port)">
+              <img src="images/github.png" alt="GitHub - TKA-PC-Port" />
+            </a>
+          </div>
+
+          <!-- Play on Web Image Button -->
+          <div class="windows">
+            <a href="https://game.technokittenadventure.ca" title="Play on Web">
+              <img src="images/playweb.png" alt="Play on Web" />
+            </a>
+          </div>
+
+          <!-- GitHub Web Port Button -->
+          <div class="windows">
+            <a href="https://github.com/weegeeday/TKA-PC-Port-Web" target="_blank" title="GitHub (TKA-PC-Port-Web)">
+              <img src="images/github.png" alt="GitHub - TKA-PC-Port-Web" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blue Footer Bar (Locked to Bottom of Screen) -->
+    <div class="footerHolder">
+      <div class="footer">
+        <div class="botlogo">
+          <img src="images/img_logo.png" height="36" alt="Techno Kitten Adventure Logo" />
+        </div>
+        <div class="footerText">
+          &copy; Techno Kitten Adventure | <a href="https://github.com/weegeeday/TKA-PC-Port-Web" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

@@ -1,7 +1,5 @@
 name = "tka-web-mainpage"
 compatibility_date = "2026-08-14"
-pages_build_output_dir = "./dist"
 
 [assets]
-directory = "./dist"
-not_found_handling = "single-page-application"
+directory = "."

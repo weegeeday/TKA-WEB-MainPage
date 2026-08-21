@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="TECHNO KITTEN ADVENTURE - Mobile">
+  <meta name="description" content="Techno Kitten Adventure Mobile Site">
+  <title>Techno Kitten Adventure - Mobile</title>
+  <link rel="stylesheet" href="css/mobile.css">
+  <script type="text/javascript">
+    (function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('mobile') === '1') return;
+      var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      var isMobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (!isMobileUA && !isTouch && window.innerWidth > 1024) {
+        window.location.replace("index.html");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Header with Black Top Bar -->
+    <header class="mobile-header">
+      <div class="top-bar">
+        <div class="top-text">Techno Kitten Adventure. Yes, you can has it.</div>
+      </div>
+      <div class="logo-container">
+        <a href="mobile.html" class="mobile-logo-link">
+          <img src="images/img_logo.png" alt="Techno Kitten Adventure Logo" class="mobile-logo">
+        </a>
+      </div>
+    </header>
+
+    <main class="mobile-main">
+      <!-- Video Section -->
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/5uySc6esCB4" title="TECHNO KITTEN ADVENTURE TRAILER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <!-- Action Buttons Stack (In Desktop Sequence Order) -->
+      <div class="mobile-buttons">
+        <!-- 1. Android Store -->
+        <a href="https://play.google.com/store/apps/details?id=com.shadow.TKA_Android" target="_blank" class="m-btn-img-wrap" title="Android App">
+          <img src="images/android.png" alt="Android App" class="m-btn-img">
+        </a>
+
+        <!-- 2. GitHub TKA-PC-Port -->
+        <a href="https://github.com/shadowartist201/TKA-PC-Port" target="_blank" class="m-btn-img-wrap" title="GitHub (TKA-PC-Port)">
+          <img src="images/github.png" alt="GitHub TKA PC Port" class="m-btn-img">
+        </a>
+
+        <!-- 3. Play on Web -->
+        <a href="https://game.technokittenadventure.ca" class="m-btn-img-wrap" title="Play on Web">
+          <img src="images/playweb.png" alt="Play on Web" class="m-btn-img">
+        </a>
+
+        <!-- 4. GitHub TKA-PC-Port-Web -->
+        <a href="https://github.com/weegeeday/TKA-PC-Port-Web" target="_blank" class="m-btn-img-wrap" title="GitHub (TKA-PC-Port-Web)">
+          <img src="images/github.png" alt="GitHub TKA PC Port Web" class="m-btn-img">
+        </a>
+
+        <!-- 5. Shop Link -->
+        <a href="https://shadows-stuff-shop.fourthwall.com/" target="_blank" class="m-btn-img-wrap" title="Shop">
+          <img src="images/img_shop.png" alt="Shop" class="m-btn-shop">
+        </a>
+      </div>
+    </main>
+
+    <footer class="mobile-footer">
+      <p>&copy; Techno Kitten Adventure</p>
+      <p><a href="index.html?desktop=1" class="desktop-link">Desktop Version</a></p>
+    </footer>
+  </div>
+</body>
+</html>
